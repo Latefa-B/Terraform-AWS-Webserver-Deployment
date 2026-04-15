@@ -25,7 +25,8 @@ Each configuration file defines how to provision and manage infrastructure resou
 
 ## Step-by-Step Instructions : 
 ### Step 1: Configure the AWS Provider
-On your configuration file provider.tf , write the code below. This tells Terraform to use AWS as a provider and the region us-east-1 as a region where all the resources will be created.
+- On your configuration file provider.tf , write the code below. This tells Terraform to use AWS as a provider and the region us-east-1 as a region where all the resources will be created.
+
 <img width="643" height="107" alt="2" src="https://github.com/user-attachments/assets/3b91e86f-94d5-4f9b-86fe-047615c22cb0" />
 
 ### Step 2 : Create a VPC and Subnets
@@ -51,8 +52,9 @@ On your security_group.tf configuration file, add the code below. This will conf
 <img width="640" height="450" alt="10" src="https://github.com/user-attachments/assets/42165ffc-bc4f-439e-825a-945005bd7e2b" />
 
 ### Step 6 : Launch EC2 Instance and Install Nginx
-On your ec2.tf configuration file, add the code below. This will launch your EC2 Instance in the Public Subnet, associate it with the security group created previously and configure Nginx Web Server.
-The “user-data” feature will auto-installs Nginx, starts it, and shows a custom HTML message.
+- On your ec2.tf configuration file, add the code below. This will launch your EC2 Instance in the Public Subnet, associate it with the security group created previously and configure Nginx Web Server.
+- The “user-data” feature will auto-installs Nginx, starts it, and shows a custom HTML message.
+
 <img width="789" height="352" alt="12" src="https://github.com/user-attachments/assets/14f54610-f7b9-49ac-aff9-91fe1e21e6ef" />
 
 ### Step 7 : Output the Public IP
